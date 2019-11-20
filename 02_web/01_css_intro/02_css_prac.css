@@ -1,0 +1,14 @@
+h1{
+    color:red;
+    font-size: 120px;
+    background-color: black;
+    
+}
+
+p{
+    color:skyblue;
+    font-size: 120px;
+    background-color: rgb(169, 221, 25);
+
+}
+/* 동일하게 설정하고 싶으면 h1, p {} 이렇게해도대*/

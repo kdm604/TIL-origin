@@ -1,0 +1,18 @@
+{% extends 'articles/base.html' %}
+
+{% block body %} 
+<!-- 꼭 바디로 안해도되는데 저 body의 기원은 base.html 에서 가져오는거니까 확인잘해야대  -->
+    <h1>Articles</h1>
+    <p><b> {{ request.user.username }}님의 방문 횟수: {{ visits_num }} {% if visits_num == 1 %} time {% else %} times {% endif %} </b></p>
+    {% for article in articles %}
+        {% include "articles/_article.html" %}        
+    {% endfor %}
+
+
+    {% if request.user.is_authenticated %}
+        <a href="{% url 'articles:create' %}">[글 작성]</a>
+    {% else %}
+        <a href="{% url 'accounts:login' %}">[로 그 인]</a>
+    {% endif %}
+
+{% endblock %}

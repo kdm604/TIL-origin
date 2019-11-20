@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <h2 class="text-center">ㅋㅋ;;</h2>
+    <h3> {{ person.name }}님의 전생 직업은 {{ person.past_job }}입니다.</h3>
+
+    <h3 class="text-center">GIPHY</h3><br>
+    <img src="{{ image }}" alt="giphy-image"><br>
+    <h3 class="text-center">NAVER_IMAGE</h3><br>
+    <img src="{{ naver_image }}" alt="naver-image">
+    <br>
+    <a href="{% url 'jobs:index' %}">내 전성의 직업이 또 있을깡?</a>
+{% endblock %}

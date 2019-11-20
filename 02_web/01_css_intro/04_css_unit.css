@@ -1,0 +1,19 @@
+h1 {
+    color: blue;
+    font-size: 50%;
+}
+
+div{
+    color: red;
+    font-size: 50%
+}
+
+ul{
+    color: rgb(200,125,125);
+    font-size: 2rem
+}
+
+div > h2{
+    color: skyblue;
+    font-size: 5em; /*500퍼센트 em은 퍼센트*/
+}

@@ -1,0 +1,9 @@
+ol > li:nth-of-type(4){
+    background: blueviolet;
+}
+ol > li:nth-child(3){
+    background: yellow
+}
+
+/* child는 n번쨰가 그 요소이면 바꾸고, 
+    type은 n번째 위치의 요소를 찾는 것 */
